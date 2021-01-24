@@ -12,6 +12,7 @@ background(black);
 circle(100,500,60,60);
 
 fill (lightest);
+stroke(white);
 circle(300,500,60,60);
 
 fill (lighter);
@@ -43,4 +44,6 @@ circle(500,130,60,60);
 
 fill(dark);
 circle(700,130,60,60);
+
+line(0,10,800,10);
 }
