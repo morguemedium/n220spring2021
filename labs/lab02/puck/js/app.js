@@ -10,5 +10,6 @@ function setup(){
 
 function draw(){
     background(0);
-    circle(mouseX,mouseY,30);
+    fill ("#FFFFFF");
+    circle(mouseX,mouseY,30); 
 }

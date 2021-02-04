@@ -7,9 +7,9 @@ function setup (){
 
 function draw(){
     background("#7E75FF");
-    circle(xPos,300,30);
+    circle(xPos,300,100);
 
-    xPos = xPos + 10;
+    xPos = xPos + 5;
 
     if(xPos > 800){
         xPos = 0;
