@@ -37,9 +37,9 @@ function draw(){
     fill ("#FFFFFF");
     noStroke();
 
-    for(let c = 0; c < 4; c++){
-        for(let d = 0; d < 4; d++){
+    for(let c = 0; c < 1; c++){
+        for(let d = 0; d < 2; d++){
             square (xPos+(xStep*c), yPos+(yStep*d), 30, 30);
         }
-    }
+    } 
 }
