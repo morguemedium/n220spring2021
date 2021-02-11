@@ -1,3 +1,10 @@
+//when divided by 3, purple circle
+//when divided by 5, green square
+//when divided by 3 and 5, blue square
+
+let xRun = 1;
+let yRun = 1;
+
 let xPos = 70;
 let yPos = 100;
 let xStep = 60;
