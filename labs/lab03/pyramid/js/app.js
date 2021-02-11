@@ -22,6 +22,9 @@ function draw() {
 
 // text above is me referencing nested loops from p5 editor LOL
 
+let xRun = 1
+let xSpeed = 1
+
 let yPos = 100;
 let yStep = 50;
 let xPos = 30;
@@ -31,15 +34,29 @@ function setup(){
     createCanvas(400,400);
     background(0);
     noLoop();
+    frameRate(1);
 }
 
 function draw(){
     fill ("#FFFFFF");
     noStroke();
+    xRun = xRun + xSpeed;
 
-    for(let c = 0; c < 1; c++){
-        for(let d = 0; d < 2; d++){
-            square (xPos+(xStep*c), yPos+(yStep*d), 30, 30);
+    for(let c = 1; c < 5; c++){
+      console.log(c);
+        for(let d = 0; d < c; d++){
+            square (xPos+(xStep*d), yPos+(yStep*c), 30, 30);
         }
     } 
 }
+
+/* 
+
+function draw(){
+  background(0);
+  fill (100);
+  square(30,30,30)
+
+xPos = xPos + xSpeed;
+}
+*/
