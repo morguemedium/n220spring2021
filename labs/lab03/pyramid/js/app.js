@@ -49,14 +49,3 @@ function draw(){
         }
     } 
 }
-
-/* 
-
-function draw(){
-  background(0);
-  fill (100);
-  square(30,30,30)
-
-xPos = xPos + xSpeed;
-}
-*/
