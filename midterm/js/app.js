@@ -1,5 +1,10 @@
 //ten circles to the page
 
+let rSpeed = 1;
+let rPos = 0;
+let downSp = 5;
+let downCi = 10;
+
 let xPos = [0,0,0,0,0,0,0,0,0,0,0];
 let yPos = [0,0,0,0,0,0,0,0,0,0,0];
 let colors = [0, "#FFFAF2", "#FFF0D9", "#FFE8C4", "#FFE1B0", "#FFD899", "#FFCE80", 
@@ -23,7 +28,13 @@ function draw(){
 
     for(var i = 0; i < xPos.length; i++){
         fill (reverse[i]);
-        circle(250, yPos[i], 10);
+        circle(xPos[i], 10, 10);
     }
+
+    downCi = downCi + 5;
+    
+    if(mouseIsPressed){
+        circle(xPos[i], downCi,10);
+    }  //lol nope
 }
 //the code draws the xPos array length on the mouseY axis
