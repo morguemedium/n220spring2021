@@ -1,18 +1,14 @@
-var mySquare = {
-    x: 100,
-    y: 130,
-    color: [245, 197, 93],
-    update: function (){
-        fill (this.color);
-        this.x += 1.5;
-        square(this.x, this.y, 30);
-    }
-}
+//script tag is always bottom of body
 
-function setup(){
-    createCanvas(400,300);
-}
+let txtDieSize = document.getElementById("txtDieSize");
 
-function draw(){
-   mySquare.update();
+let dvResult = document.getElementById("dvResult");
+dvResult.innerHTML = "Hello World!"
+
+function rollDie(){
+    let dieSize = Number(txtDieSize.value);
+    let randRoll = 1 + Math.floor(Math.random() * dieSize);
+    console.log(randRoll);
+
+    txtDieSize.value = "";
 }
