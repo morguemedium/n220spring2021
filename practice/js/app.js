@@ -1,14 +1,11 @@
-//script tag is always bottom of body
+let txtEx = document.getElementById("txtEx");
 
-let txtDieSize = document.getElementById("txtDieSize");
+function breakString(){
+    let sentence = txtEx.value;
 
-let dvResult = document.getElementById("dvResult");
-dvResult.innerHTML = "Hello World!"
+    console.log(sentence);
 
-function rollDie(){
-    let dieSize = Number(txtDieSize.value);
-    let randRoll = 1 + Math.floor(Math.random() * dieSize);
-    console.log(randRoll);
+    let splitSentence = sentence.split(" ");
 
-    txtDieSize.value = "";
+    console.log(splitSentence);
 }
