@@ -31,4 +31,10 @@ function filterString(){
             }
         }
     }
+    
+    if(badCount == 0){
+        displayCount.innerHTML = "Sentence clear.";
+    }
+
+    inputSent.value = "";
 }
