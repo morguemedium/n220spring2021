@@ -3,7 +3,7 @@
 let averageTxt = document.getElementById("averageTxt");
 
 let displayInput = document.getElementById("displayInput");
-displayInput.innerHTML = "You've typed: " + averageTxt.value;
+displayInput.innerHTML = "(wii sports music)";
 
 function inputString(){
     
@@ -18,9 +18,16 @@ function inputString(){
         sum += Number(stringSplit[x]);
     }
 //convert the array into number string, loop sum + input together
-    console.log(sum);
-}
+  
 
-//calculate average
+let avgNum = 0;
+//calculate average, define var
+
+avgNum = sum / stringSplit.length;
+
+displayInput.innerHTML = "Your sum is " + sum + "<br>" + "Your average is " + avgNum;
 //display sum & average
-//remove text so user can add new numbers
+
+averageTxt.value = "";
+//removes text
+}
