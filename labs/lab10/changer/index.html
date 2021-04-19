@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Changer</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            float: left;
+            margin: 5px;
+            background-color: #BABABA;
+        }
+    </style>
 </head>
 <body>
-    <div id="firstSquare" onclick="changeColor(event)"></div>
+    <div id="firstSquare" onclick="changeColor()" data-color="#750000"></div>
+    <div id="secondSquare" onclick="changeColor()" data-color="#00750E"></div>
+    <div id="thirdSquare" onclick="changeColor()" data-color="#000A75"></div>
     <script src="js/app.js"></script>
 </body>
 </html>

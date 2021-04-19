@@ -1,23 +1,24 @@
-//three square divs
-//all grey
-// 200 x 200 px
-//floated left
-//5 px margin
-
-let colorSq = ["#750000", "#00750E", "#000A75"];
-//red, green, blue
-for(c = 0; c < colorSq.length; c++){}
+//3 square divs
+//grey
+//200 x 200 px
+//float left
+//margin 5
+//one event handler
+//interacts with each element
+//data attributes store the colors
 
 let firstSquare = document.getElementById("firstSquare");
+firstSquare = addEventListener("click", changeColor);
 
-for(s = 0; s < 3; s++){
-    let moreSquare = document.createElement("div");
+let secondSquare = document.getElementById("secondSquare");
+secondSquare = addEventListener("click", changeColor);
 
-    moreSquare.style.height = "200px";
-    moreSquare.style.width = "200px";
-    moreSquare.style.float = "left";
-    moreSquare.style.margin = "5px";
-    moreSquare.style.backgroundColor = "#BABABA";
+let thirdSquare = document.getElementById("thirdSquare");
+thirdSquare = addEventListener("click", changeColor);
 
-    firstSquare.appendChild(moreSquare);
+function changeColor(event){
+    let response = event.target.getAttribute("data-color");
+
+    event.target.style.backgroundColor = response;
 }
+
