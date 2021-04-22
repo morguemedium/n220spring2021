@@ -8,7 +8,6 @@
         #displayColor{
             height: 200px;
             width: 500px;
-            background-color: #000000;
             border: 2px solid #000000;
             margin: 5px;
         }
@@ -44,23 +43,23 @@
 </head>
 <body>
 
-<div id="displayColor"></div>
+<div id="displayColor" style="background-color: rgb(0,0,0)"></div>
 <div id="displayColorText"></div>
 <br>
 <div id="redLine">Red</div>
-<button id="redOne" onclick="plusOne(event)">+1</button>
-<button id="redFive" onclick="plusFive(event)">+5</button>
-<button id="redTen" onclick="plusTen(event)">+10</button>
+<button id="redOne" data-value="1">+1</button>
+<button id="redFive" data-value="5">+5</button>
+<button id="redTen"  data-value="10">+10</button>
 <br>
 <div id="greenLine">Green</div>
-<button id="greenOne" onclick="plusOne(event)">+1</button>
-<button id="greenFive" onclick="plusFive(event)">+5</button>
-<button id="greenTen" onclick="plusTen()">+10</button>
+<button id="greenOne"  data-value="1">+1</button>
+<button id="greenFive" data-value="5">+5</button>
+<button id="greenTen" data-value="10">+10</button>
 <br>
 <div id="blueLine">Blue</div>
-<button id="blueOne" onclick="plusOne(event)">+1</button>
-<button id="blueFive" onclick="plusFive(event)">+5</button>
-<button id="blueTen" onclick="plusTen(event)">+10</button>
+<button id="blueOne"  data-value="1">+1</button>
+<button id="blueFive" data-value="5">+5</button>
+<button id="blueTen" data-value="10">+10</button>
 
 <script src="js/app.js"></script>
 </body>
