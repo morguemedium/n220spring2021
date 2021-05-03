@@ -104,9 +104,9 @@ function flipCard(){
 
     if(cardsChosen.length == 2){
         setTimeout(checkMatch, 220);
-    }
+    };
     //should give user two seconds to see the card before flipping back to black card
-}
+};
 
 //checking for matches
 
@@ -123,6 +123,9 @@ function checkMatch(){
         cards[optionOne].setAttribute('src','images/black.png');
         cards[optionTwo].setAttribute('src', 'images/black.png');
     }
+    cardsChosen = [];
+    cardsChosenId = [];
 }
+
 });
 //means everything in here will run before stylesheets and the like are loaded
